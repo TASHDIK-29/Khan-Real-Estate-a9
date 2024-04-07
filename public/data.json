@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/house1.jpg",
+      "estate_title": "Cozy Family Home",
+      "segment_name": "Single-family homes",
+      "description": "Charming single-family home with spacious rooms, modern amenities, and a lovely backyard garden.",
+      "price": "$350,000",
+      "status": "sale",
+      "area": "2000 sqft",
+      "location": "123 Main St, Anytown, USA",
+      "facilities": ["Backyard garden", "Garage", "Fireplace"]
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/townhouse1.jpg",
+      "estate_title": "Modern Townhouse",
+      "segment_name": "Townhouses",
+      "description": "Contemporary townhouse with sleek design, open floor plan, and rooftop terrace perfect for entertaining.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "1800 sqft",
+      "location": "456 Oak Ave, Anycity, USA",
+      "facilities": ["Rooftop terrace", "Modern kitchen", "Walk-in closets"]
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/apartment1.jpg",
+      "estate_title": "Luxury Apartment",
+      "segment_name": "Apartments",
+      "description": "Luxurious apartment in a high-rise building with stunning city views, resort-style amenities, and concierge services.",
+      "price": "$2,500/month",
+      "status": "rent",
+      "area": "1500 sqft",
+      "location": "789 Elm St, Anycity, USA",
+      "facilities": ["Swimming pool", "Fitness center", "24/7 security"]
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/student_housing1.jpg",
+      "estate_title": "Student Housing",
+      "segment_name": "Student housing",
+      "description": "Convenient student housing near campus with furnished apartments, study lounges, and recreational facilities.",
+      "price": "$800/month",
+      "status": "rent",
+      "area": "1200 sqft",
+      "location": "101 College Ave, Anytown, USA",
+      "facilities": ["Study lounges", "Fitness center", "Game room"]
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/senior_living1.jpg",
+      "estate_title": "Senior Living Community",
+      "segment_name": "Senior living communities",
+      "description": "Senior living community offering independent living, assisted living, and memory care services in a tranquil setting.",
+      "price": "$3,500/month",
+      "status": "rent",
+      "area": "1600 sqft",
+      "location": "321 Maple St, Anycity, USA",
+      "facilities": ["On-site dining", "Wellness center", "Outdoor walking paths"]
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/vacation_rental1.jpg",
+      "estate_title": "Beachfront Vacation Rental",
+      "segment_name": "Vacation rentals",
+      "description": "Beachfront vacation rental with panoramic ocean views, private beach access, and spacious outdoor living areas.",
+      "price": "$300/night",
+      "status": "rent",
+      "area": "2200 sqft",
+      "location": "555 Beach Blvd, Anybeach, USA",
+      "facilities": ["Private beach access", "Outdoor grill", "Deck with ocean views"]
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/house2.jpg",
+      "estate_title": "Family Retreat",
+      "segment_name": "Single-family homes",
+      "description": "Inviting family home nestled in a quiet neighborhood with a large backyard, perfect for outdoor gatherings.",
+      "price": "$400,000",
+      "status": "sale",
+      "area": "2500 sqft",
+      "location": "246 Pine St, Anycity, USA",
+      "facilities": ["Large backyard", "Deck", "Fire pit"]
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/townhouse2.jpg",
+      "estate_title": "Historic Townhouse",
+      "segment_name": "Townhouses",
+      "description": "Historic townhouse with original architectural features, elegant interiors, and a charming courtyard.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "2200 sqft",
+      "location": "789 Vine St, Anycity, USA",
+      "facilities": ["Courtyard", "Original woodwork", "Formal gardens"]
+    },
+    {
+      "id": 9,
+      "image": "https://example.com/apartment2.jpg",
+      "estate_title": "Downtown Loft",
+      "segment_name": "Apartments",
+      "description": "Spacious downtown loft with industrial-chic design, exposed brick walls, and skyline views.",
+      "price": "$3,000/month",
+      "status": "rent",
+      "area": "1800 sqft",
+      "location": "123 Broadway, Anycity, USA",
+      "facilities": ["Open-concept layout", "Loft-style bedroom", "Exposed ductwork"]
+    }
+  ]
+  
