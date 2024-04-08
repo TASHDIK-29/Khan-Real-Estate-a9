@@ -37,8 +37,8 @@ const Nav = () => {
                 {
                     user ?
                         <div className="flex items-center gap-2">
-                            <div className="w-14 rounded-full">
-                                <img className="w-full" src={placeholderImg} alt="" />
+                            <div className="w-14 rounded-full hover:tooltip tooltip-open hover:tooltip-bottom hover:z-10" data-tip={user.displayName ? user.displayName : 'User name not found'}>
+                                <img className="w-full rounded-full" src={user.photoURL ? user.photoURL : placeholderImg} alt="" />
                             </div>
                             <Link onClick={logOut} to='/login' className="btn">Logout</Link>
                         </div>

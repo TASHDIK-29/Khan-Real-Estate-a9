@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate  } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
@@ -6,12 +6,17 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
 
+    const location = useLocation();
+    const navigate = useNavigate ()
+    const page = location?.state || '/'; 
+
     const {loginUser, googleLogin, githubLogin} = useContext(AuthContext);
 
     const handelSocialLogin = socialProvider =>{
         socialProvider()
         .then(result =>{
             console.log(result.user);
+            navigate(page);
         })
         .catch(error =>{
             console.log(error);

@@ -12,6 +12,7 @@ import DetailCard from './pages/details/DetailCard';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import AuthProvider from './auth/AuthProvider';
+import PrivateRoute from './private/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/detail/:id',
-        element: <DetailCard></DetailCard>,
+        element: <PrivateRoute><DetailCard></DetailCard></PrivateRoute>,
         loader: () => fetch('/data.json')
       },
       {
