@@ -1,25 +1,65 @@
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+      } = useForm()
+    
+      const onSubmit = (data) => {
+        console.log(data)
+        const {name, email, password, photo} = data;
+        console.log(name, email, password, photo)
+
+    }
+
+
     return (
         <div>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col w-2/5">
                     <div className="card shrink-0 w-full  bg-base-100 border border-purple-400">
                         <h1 className="mx-auto mt-4 text-3xl font-bold text-gray-500">Please Register</h1>
-                        <form className="card-body">
+                        <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <hr />
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
+                                </label>
+                                <input type="text" placeholder="Your Name" className="input input-bordered"
+                                {...register("name", { required: true })}
+                                 />
+                                {errors.name && <span className="text-red-500 font-bold">This field is required</span>}
+                            </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="email" className="input input-bordered" required />
+                                <input type="email" placeholder="email" className="input input-bordered"
+                                {...register("email", { required: true })}
+                                 />
+                                {errors.email && <span className="text-red-500 font-bold">This field is required</span>}
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">PhotoURL</span>
+                                </label>
+                                <input type="text" placeholder="PhotoURL" className="input input-bordered"
+                                {...register("photo", { required: false })}
+                                 />
+                                {errors.photo && <span className="text-red-500 font-bold">This field is required</span>}
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered" required />
+                                <input type="password" placeholder="password" className="input input-bordered"
+                                {...register("password", { required: true })}
+                                 />
+                                {errors.password && <span className="text-red-500 font-bold">This field is required</span>} 
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn bg-purple-600 text-white font-bold">Register</button>
