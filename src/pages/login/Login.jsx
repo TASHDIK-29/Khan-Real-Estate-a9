@@ -37,6 +37,7 @@ const Login = () => {
         loginUser(email, password)
         .then(result =>{
             console.log(result.user);
+            navigate(page);
             alert('logged in successful');
         })
         .catch(error =>{
