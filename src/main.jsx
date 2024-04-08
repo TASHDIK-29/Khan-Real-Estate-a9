@@ -9,6 +9,7 @@ import {
 import MainLayout from './pages/layout/MainLayout';
 import Home from './pages/home/Home';
 import DetailCard from './pages/details/DetailCard';
+import Login from './pages/login/Login';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
         path: '/detail/:id',
         element: <DetailCard></DetailCard>,
         loader: () => fetch('/data.json')
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
       },
     ]
   },
