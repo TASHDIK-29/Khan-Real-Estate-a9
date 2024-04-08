@@ -1,26 +1,31 @@
-import { Link, useLocation, useNavigate  } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+
+
+
 
 const Login = () => {
 
     const location = useLocation();
-    const navigate = useNavigate ()
-    const page = location?.state || '/'; 
+    const navigate = useNavigate()
+    const page = location?.state || '/';
 
-    const {loginUser, googleLogin, githubLogin} = useContext(AuthContext);
+    const { loginUser, googleLogin, githubLogin } = useContext(AuthContext);
 
-    const handelSocialLogin = socialProvider =>{
+    const handelSocialLogin = socialProvider => {
         socialProvider()
-        .then(result =>{
-            console.log(result.user);
-            navigate(page);
-        })
-        .catch(error =>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result.user);
+                navigate(page);
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
     const {
@@ -31,20 +36,26 @@ const Login = () => {
 
     const onSubmit = (data) => {
         console.log(data)
-        const {email, password} = data;
+        const { email, password } = data;
         console.log(email, password);
 
         loginUser(email, password)
-        .then(result =>{
-            console.log(result.user);
-            navigate(page);
-            alert('logged in successful');
-        })
-        .catch(error =>{
-            console.log(error);
-        })
-        
+            .then(result => {
+                console.log(result.user);
+                navigate(page);
+                alert('logged in successful');
+            })
+            .catch(error => {
+                console.log(error);
+            })
 
+
+    }
+
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = state =>{
+        setToggle(state);
     }
 
     return (
@@ -68,10 +79,13 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered"
-                                    {...register("password", { required: true })}
-                                />
-                                {errors.password && <span className="text-red-500 font-bold">This field is required</span>}
+                                <div className="relative">
+                                    <input type={toggle ? "text" : "password"} placeholder="password" className="input input-bordered w-full"
+                                        {...register("password", { required: true })}
+                                    />
+                                    {errors.password && <span className="text-red-500 font-bold">This field is required</span>}
+                                    <span onClick={() => handleToggle(!toggle)} className="absolute top-4 right-2 cursor-pointer">{toggle ? <FaEyeSlash /> :<FaEye />}</span>
+                                </div>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>

@@ -1,31 +1,40 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../auth/AuthProvider";
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+
 
 const Register = () => {
 
-    const {createUser} = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
 
     const {
         register,
         handleSubmit,
         formState: { errors },
-      } = useForm()
-    
-      const onSubmit = (data) => {
+    } = useForm()
+
+    const onSubmit = (data) => {
         console.log(data)
-        const {name, email, password, photo} = data;
+        const { name, email, password, photo } = data;
         console.log(name, email, password, photo);
 
         createUser(email, password)
-        .then(result =>{
-            console.log(result.user);
-        })
-        .catch(error =>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.log(error);
+            })
 
+    }
+
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = state => {
+        setToggle(state);
     }
 
 
@@ -42,8 +51,8 @@ const Register = () => {
                                     <span className="label-text">Name</span>
                                 </label>
                                 <input type="text" placeholder="Your Name" className="input input-bordered"
-                                {...register("name", { required: true })}
-                                 />
+                                    {...register("name", { required: true })}
+                                />
                                 {errors.name && <span className="text-red-500 font-bold">This field is required</span>}
                             </div>
                             <div className="form-control">
@@ -51,8 +60,8 @@ const Register = () => {
                                     <span className="label-text">Email</span>
                                 </label>
                                 <input type="email" placeholder="email" className="input input-bordered"
-                                {...register("email", { required: true })}
-                                 />
+                                    {...register("email", { required: true })}
+                                />
                                 {errors.email && <span className="text-red-500 font-bold">This field is required</span>}
                             </div>
                             <div className="form-control">
@@ -60,18 +69,21 @@ const Register = () => {
                                     <span className="label-text">PhotoURL</span>
                                 </label>
                                 <input type="text" placeholder="PhotoURL" className="input input-bordered"
-                                {...register("photo", { required: false })}
-                                 />
+                                    {...register("photo", { required: false })}
+                                />
                                 {errors.photo && <span className="text-red-500 font-bold">This field is required</span>}
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered"
-                                {...register("password", { required: true })}
-                                 />
-                                {errors.password && <span className="text-red-500 font-bold">This field is required</span>} 
+                                <div className="relative">
+                                    <input type={toggle ? "text" : "password"} placeholder="password" className="input input-bordered w-full"
+                                        {...register("password", { required: true })}
+                                    />
+                                    {errors.password && <span className="text-red-500 font-bold">This field is required</span>}
+                                    <span onClick={() => handleToggle(!toggle)} className="absolute top-4 right-2 cursor-pointer">{toggle ? <FaEyeSlash /> : <FaEye />}</span>
+                                </div>
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn bg-purple-600 text-white font-bold">Register</button>
