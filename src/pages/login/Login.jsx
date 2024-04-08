@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
 
-    const {loginUser} = useContext(AuthContext);
+    const {loginUser, googleLogin} = useContext(AuthContext);
 
     const {
         register,
@@ -63,6 +64,10 @@ const Login = () => {
                                 <button className="btn bg-purple-600 text-white font-bold">Login</button>
                             </div>
                         </form>
+                        <div className="flex justify-between mb-3">
+                            <button onClick={googleLogin} className="flex items-center gap-2 border border-blue-500 rounded-md text-blue-500 font-semibold mx-auto py-1 px-3"><FaGoogle />Login with Google</button>
+                            <button onClick={googleLogin} className="flex items-center gap-2 border border-gray-600 rounded-md text-gray-700 font-semibold mx-auto py-1 px-3"><FaGithub />Login with Github</button>
+                        </div>
                         <div>
                             <p className="text-base mx-auto mb-3 text-center">Have no account ? please <Link to='/register' className="text-lg font-bold text-purple-600">Register</Link> </p>
                         </div>
