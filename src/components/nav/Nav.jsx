@@ -1,12 +1,16 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-
+import { AuthContext } from "../../auth/AuthProvider";
+import placeholderImg from "../../assets/user.png"
 const Nav = () => {
+
+    const { user, logOut } = useContext(AuthContext);
 
     const navLinks = <>
 
-        <li><Link to = '/'>Home</Link></li>
+        <li><Link to='/'>Home</Link></li>
         <li><Link>Update Profile</Link></li>
-        
+
 
     </>
 
@@ -30,7 +34,17 @@ const Nav = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to = '/login' className="btn">Login</Link>
+                {
+                    user ?
+                        <div className="flex items-center gap-2">
+                            <div className="w-14 rounded-full">
+                                <img className="w-full" src={placeholderImg} alt="" />
+                            </div>
+                            <Link onClick={logOut} to='/login' className="btn">Logout</Link>
+                        </div>
+                        : <Link to='/login' className="btn">Login</Link>
+                }
+
             </div>
         </div>
     );
