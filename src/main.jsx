@@ -13,6 +13,7 @@ import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import AuthProvider from './auth/AuthProvider';
 import PrivateRoute from './private/PrivateRoute';
+import Bookmark from './pages/bookmark/Bookmark';
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/bookmark',
+        element: <PrivateRoute><Bookmark></Bookmark></PrivateRoute>
       },
     ]
   },
