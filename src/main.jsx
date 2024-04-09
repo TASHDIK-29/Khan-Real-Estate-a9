@@ -16,11 +16,13 @@ import PrivateRoute from './private/PrivateRoute';
 import Bookmark from './pages/bookmark/Bookmark';
 import { Toaster } from 'react-hot-toast';
 import { HelmetProvider } from 'react-helmet-async';
+import Error from './pages/error/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',
