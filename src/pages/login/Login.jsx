@@ -5,6 +5,7 @@ import { AuthContext } from "../../auth/AuthProvider";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import toast from 'react-hot-toast';
 
 
 
@@ -22,6 +23,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 navigate(page);
+                toast.success('Login Successful');
             })
             .catch(error => {
                 console.log(error);
@@ -43,10 +45,11 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 navigate(page);
-                alert('logged in successful');
+                toast.success('Login Successful');
             })
             .catch(error => {
                 console.log(error);
+                toast.error('Invalid-Credential');
             })
 
 

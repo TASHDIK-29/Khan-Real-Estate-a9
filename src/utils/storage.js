@@ -1,3 +1,4 @@
+import toast from 'react-hot-toast';
 
 
 
@@ -18,7 +19,7 @@ const saveStoredData = property =>{
     const properties = getStoredData();
     properties.push(property);
     localStorage.setItem('bookmark', JSON.stringify(properties));
-    alert('Added to Bookmark');
+    toast.success('Added to Bookmark');
 }
 
 export {getStoredData, saveStoredData}

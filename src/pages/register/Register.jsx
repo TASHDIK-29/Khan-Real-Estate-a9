@@ -1,14 +1,17 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../auth/AuthProvider";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import toast from 'react-hot-toast';
 
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+
 
     const {
         register,
@@ -24,9 +27,15 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success('Registration Successful');
+                navigate('/');
             })
             .catch(error => {
                 console.log(error);
+                if(error.message === 'Firebase: Error (auth/email-already-in-use).'){
+                    toast.error('This email already been used');
+                }
+
             })
 
     }
