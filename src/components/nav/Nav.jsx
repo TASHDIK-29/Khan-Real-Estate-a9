@@ -2,18 +2,24 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../auth/AuthProvider";
 import placeholderImg from "../../assets/user.png"
+
+
+
 const Nav = () => {
 
     const { user, logOut } = useContext(AuthContext);
 
     const navLinks = <>
-
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/bookmark'>Bookmarks</Link></li>
-        <li><Link>Update Profile</Link></li>
-
+        <li><Link  to='/'>Home</Link></li>
+        <li><Link  to='/bookmark'>Bookmarks</Link></li>
+        <li><Link >Update Profile</Link></li>
 
     </>
+
+
+    const handelLogout = () => {
+        logOut();
+    }
 
 
     return (
@@ -41,7 +47,7 @@ const Nav = () => {
                             <div className="w-14 rounded-full hover:tooltip tooltip-open hover:tooltip-bottom hover:z-10" data-tip={user.displayName ? user.displayName : 'User name not found'}>
                                 <img className="w-full rounded-full" src={user.photoURL ? user.photoURL : placeholderImg} alt="" />
                             </div>
-                            <Link onClick={logOut} to='/login' className="btn">Logout</Link>
+                            <Link onClick={handelLogout} to='/login' className="btn">Logout</Link>
                         </div>
                         : <Link to='/login' className="btn">Login</Link>
                 }

@@ -9,6 +9,7 @@ import { MdBalcony } from "react-icons/md";
 import { FaBuildingUser } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import { toast } from 'react-hot-toast';
 
 import 'animate.css';
 import { getStoredData, saveStoredData } from '../../utils/storage';
@@ -37,7 +38,7 @@ const DetailCard = () => {
             saveStoredData(data);
         }
         else{
-            alert('Already Bookmarked');
+            toast.error('Already Bookmarked');
         }
     }
 
