@@ -12,6 +12,7 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
     const navigate = useNavigate();
 
+    const [err, setErr] = useState('');
 
     const {
         register,
@@ -23,6 +24,23 @@ const Register = () => {
         console.log(data)
         const { name, email, password, photo } = data;
         console.log(name, email, password, photo);
+
+        if(!/^(?=.*[A-Z]).*$/.test(password)){
+            setErr('Password must contain at least one Uppercase Character');
+            return;
+        }
+
+        if(!/^(?=.*[a-z]).*$/.test(password)){
+            setErr('Password must contain at least one Lowercase Character');
+            return;
+        }
+
+        if(!/^.{6,}$/.test(password)){
+            setErr('Password must contain at least six Character');
+            return;
+        }
+
+        setErr('');
 
         createUser(email, password)
             .then(result => {
@@ -91,6 +109,7 @@ const Register = () => {
                                         {...register("password", { required: true })}
                                     />
                                     {errors.password && <span className="text-red-500 font-bold">This field is required</span>}
+                                    {err && <span className="text-red-500 font-bold">{err}</span>}
                                     <span onClick={() => handleToggle(!toggle)} className="absolute top-4 right-2 cursor-pointer">{toggle ? <FaEyeSlash /> : <FaEye />}</span>
                                 </div>
                             </div>
