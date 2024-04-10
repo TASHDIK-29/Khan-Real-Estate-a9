@@ -5,6 +5,8 @@ import { AuthContext } from "../../auth/AuthProvider";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
+import { updateProfile } from "firebase/auth";
+import auth from "../../firebase/firebase.config";
 
 
 const Register = () => {
@@ -46,7 +48,14 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success('Registration Successful');
-                navigate('/');
+                
+
+                updateProfile(auth.currentUser, {
+                    displayName: name, 
+                    photoURL: photo
+                  })
+
+                  navigate('/');
             })
             .catch(error => {
                 console.log(error);

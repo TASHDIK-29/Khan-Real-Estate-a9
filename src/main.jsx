@@ -17,6 +17,7 @@ import Bookmark from './pages/bookmark/Bookmark';
 import { Toaster } from 'react-hot-toast';
 import { HelmetProvider } from 'react-helmet-async';
 import Error from './pages/error/Error';
+import UpdateProfile from './pages/update/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/bookmark',
         element: <PrivateRoute><Bookmark></Bookmark></PrivateRoute>
+      },
+      {
+        path: '/update',
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       },
     ]
   },

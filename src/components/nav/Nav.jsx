@@ -12,7 +12,7 @@ const Nav = () => {
     const navLinks = <>
         <li><Link  to='/'>Home</Link></li>
         <li><Link  to='/bookmark'>Bookmarks</Link></li>
-        <li><Link >Update Profile</Link></li>
+        <li><Link  to='/update'>Update Profile</Link></li>
 
     </>
 
