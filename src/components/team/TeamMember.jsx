@@ -1,6 +1,6 @@
 import { useState } from "react";
 import img2 from '../../assets/member2-1.jpg'
-
+import 'animate.css';
 
 
 
@@ -39,7 +39,7 @@ const TeamMember = () => {
                             <p className="text-green-700">Buying Agent</p>
                         </div>
                     </div>
-                    {sidebar && count === 1 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-black opacity-75 delay-1000">
+                    {sidebar && count === 1 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
@@ -59,7 +59,7 @@ const TeamMember = () => {
                             <p className="text-green-700">Buying Agent</p>
                         </div>
                     </div>
-                    {sidebar && count === 2 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-black opacity-75 delay-1000">
+                    {sidebar && count === 2 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
@@ -79,7 +79,7 @@ const TeamMember = () => {
                             <p className="text-green-700">Buying Agent</p>
                         </div>
                     </div>
-                    {sidebar && count === 3 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-black opacity-75 delay-1000">
+                    {sidebar && count === 3 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50  animate__animated animate__fadeInLeft delay-300">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
@@ -99,7 +99,7 @@ const TeamMember = () => {
                             <p className="text-green-700">Buying Agent</p>
                         </div>
                     </div>
-                    {sidebar && count === 4 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-black opacity-75 delay-1000">
+                    {sidebar && count === 4 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
