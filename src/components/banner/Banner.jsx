@@ -1,19 +1,17 @@
 import slider1 from '../../assets/slider1.jpg'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+import 'animate.css';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
-import { useEffect } from 'react';
+
+
 
 const Banner = () => {
 
-    useEffect(() => {
-        AOS.init();
-    }, [])
 
 
     return (
@@ -38,7 +36,7 @@ const Banner = () => {
                         backgroundRepeat: "no-repeat",
                         height: '80vh'
                     }}>
-                        <div className='p-10 space-y-2 w-1/2 animate__animated animate__fadeInLeft'>
+                        <div className='p-10 space-y-3 w-1/2 animate__animated animate__fadeInLeft'>
                             <h1 className='text-white font-bold text-xl'>Luxury House</h1>
                             <h1 className='text-white font-bold text-4xl border-l-2 animate__animated animate__fadeInLeft'>Luxury Residence Here</h1>
                             <p className='text-white font-semibold animate__animated animate__fadeInLeft'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim tempora quia ipsa repellendus, voluptates harum reprehenderit fugiat cupiditate quam id cumque at cum voluptatem!</p>
@@ -53,7 +51,7 @@ const Banner = () => {
                         backgroundRepeat: "no-repeat",
                         height: '80vh'
                     }}>
-                        <div className='p-10 space-y-2 w-1/2 animate__animated animate__fadeInLeft'>
+                        <div className='p-10 space-y-3 w-1/2 animate__animated animate__fadeInLeft'>
                             <h1 className='text-white font-bold text-xl'>Luxury House</h1>
                             <h1 className='text-white font-bold text-4xl border-l-2 animate__animated animate__fadeInLeft'>Luxury Residence Here</h1>
                             <p className='text-white font-semibold animate__animated animate__fadeInLeft'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim tempora quia ipsa repellendus, voluptates harum reprehenderit fugiat cupiditate quam id cumque at cum voluptatem!</p>
@@ -68,7 +66,7 @@ const Banner = () => {
                         backgroundRepeat: "no-repeat",
                         height: '80vh'
                     }}>
-                        <div className='p-10 space-y-2 w-1/2 animate__animated animate__fadeInLeft'>
+                        <div className='p-10 space-y-3 w-1/2 animate__animated animate__fadeInLeft'>
                             <h1 className='text-white font-bold text-xl'>Luxury House</h1>
                             <h1 className='text-white font-bold text-4xl border-l-2 animate__animated animate__fadeInLeft'>Luxury Residence Here</h1>
                             <p className='text-white font-semibold animate__animated animate__fadeInLeft'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim tempora quia ipsa repellendus, voluptates harum reprehenderit fugiat cupiditate quam id cumque at cum voluptatem!</p>

@@ -36,7 +36,7 @@ const TeamMember = () => {
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
                             <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
-                            <p className="text-green-700">Buying Agent</p>
+                            <p className="text-green-700 font-bold">Buying Agent</p>
                         </div>
                     </div>
                     {sidebar && count === 1 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
@@ -56,7 +56,7 @@ const TeamMember = () => {
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
                             <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
-                            <p className="text-green-700">Buying Agent</p>
+                            <p className="text-green-700 font-bold">Buying Agent</p>
                         </div>
                     </div>
                     {sidebar && count === 2 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
@@ -76,7 +76,7 @@ const TeamMember = () => {
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
                             <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
-                            <p className="text-green-700">Buying Agent</p>
+                            <p className="text-green-700 font-bold">Buying Agent</p>
                         </div>
                     </div>
                     {sidebar && count === 3 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50  animate__animated animate__fadeInLeft delay-300">
@@ -96,7 +96,7 @@ const TeamMember = () => {
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
                             <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
-                            <p className="text-green-700">Buying Agent</p>
+                            <p className="text-green-700 font-bold">Buying Agent</p>
                         </div>
                     </div>
                     {sidebar && count === 4 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
