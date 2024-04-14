@@ -13,13 +13,13 @@ const BookmarkCard = ({ item }) => {
 
     return (
         <Link to = {`/detail/${id}`}>
-            <div className=" rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+            <div className=" rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 flex flex-col">
                 <div className='relative'>
                     <img src={img} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                     <h1 className='text-white font-bold absolute top-0 right-0 bg-green-500 p-2 opacity-80 rounded-bl-xl'>{status}</h1>
                     <h1 className='text-white font-bold absolute top-0 left-0 bg-green-500 p-2 opacity-80 rounded-br-xl'>Hot Offer</h1>
                 </div>
-                <div className='flex justify-between p-2 bg-black text-white font-bold'>
+                <div className='flex flex-col md:flex-row justify-between p-2 bg-black text-white font-bold flex-grow'>
                     <h1 className='flex gap-2 items-center'><FaTags />{segment_name}</h1>
                     <h5 className='flex gap-2 items-center'><FaHouse />{area}</h5>
                     <h3 className='text-orange-700'>{price}</h3>

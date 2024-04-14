@@ -28,7 +28,7 @@ const TeamMember = () => {
             <div className="text-center text-3xl font-bold mt-20 mb-12">
                 <h1>Meet Our Team Members</h1>
             </div>
-            <div className="mb-40 grid grid-cols-4 gap-5 p-6">
+            <div className="mb-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-6">
                 <div className="relative rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
                     onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
                 >

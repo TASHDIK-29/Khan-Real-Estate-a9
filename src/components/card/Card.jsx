@@ -15,10 +15,10 @@ const Card = ({ item }) => {
                 <h1 className='text-white font-bold absolute top-0 right-0 bg-green-500 p-2 opacity-80 rounded-bl-xl'>{status}</h1>
                 <h1 className='text-white font-bold absolute top-0 left-0 bg-green-500 p-2 opacity-80 rounded-br-xl'>Hot Offer</h1>
             </div>
-            <div className='flex justify-between p-2 bg-black text-white font-bold'>
+            <div className='flex flex-col md:flex-row justify-between p-2 bg-black text-white font-bold'>
                 <h1 className='flex gap-2 items-center'><FaTags />{segment_name}</h1>
                 <h5 className='flex gap-2 items-center'><FaHouse />{area}</h5>
-                <h3 className='text-orange-700'>{price}</h3>
+                <h3 className='text-orange-700 text-start'>{price}</h3>
             </div>
             <div className="flex flex-col justify-between p-6 space-y-8 flex-grow">
                 <div className="space-y-2">

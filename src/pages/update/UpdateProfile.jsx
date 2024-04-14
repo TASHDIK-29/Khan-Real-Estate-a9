@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
+import toast from 'react-hot-toast';
 
 const UpdateProfile = () => {
 
@@ -31,16 +32,22 @@ const UpdateProfile = () => {
             photoURL: photo
         })
             .then(() => {
-                alert('Updated')
+
+                location.reload();
+                
             })
             .catch((error) => {
                 console.log(error);
             });
+
+            
+            toast.success('Profile Updated');
+
     }
 
     return (
         <div className="hero min-h-screen">
-            <div className="hero-content w-1/2 flex-col">
+            <div className="hero-content w-full md:w-2/3 lg:w-1/2 flex-col">
                 <h1 className="text-2xl font-bold mb-6 underline">Update Your Profile</h1>
                 <div className="card shrink-0 rounded-none w-full bg-gray-500/25">
                     <form onSubmit={handelUpdate} className="card-body">

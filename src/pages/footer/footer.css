@@ -1,0 +1,19 @@
+
+
+
+.footer-container {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .footer-container{
+        height: 100%;
+    }
+}
