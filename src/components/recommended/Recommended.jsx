@@ -6,14 +6,14 @@ import { MdOutlineBathtub } from "react-icons/md";
 import { MdBalcony } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-
-const BookmarkCard = ({ item }) => {
+const Recommended = ({ item }) => {
+    console.log(item)
 
     const { facilities, location, interior, area, status, price, description, segment_name, estate_title, image, id } = item;
 
     return (
-        <Link to = {`/detail/${id}`}>
-            <div className=" rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 flex flex-col">
+        <Link to={`/detail/${id}`}>
+            <div className="w-72 md:w-[420px] rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 flex flex-col mx-4 my-4">
                 <div className='relative'>
                     <img src={img} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                     <h1 className='text-white font-bold absolute top-0 right-0 bg-green-500 p-2 opacity-80 rounded-bl-xl'>{status}</h1>
@@ -34,4 +34,4 @@ const BookmarkCard = ({ item }) => {
     );
 };
 
-export default BookmarkCard;
+export default Recommended;

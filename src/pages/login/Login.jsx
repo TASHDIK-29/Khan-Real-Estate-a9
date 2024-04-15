@@ -6,6 +6,7 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -63,6 +64,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Login | Khan Real Estate</title>
+            </Helmet>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col w-full md:w-4/5 lg:w-2/5">
                     <div className="card shrink-0 w-full  bg-base-100 border border-purple-400">

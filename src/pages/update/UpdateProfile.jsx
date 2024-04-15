@@ -3,6 +3,7 @@ import { AuthContext } from "../../auth/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 import toast from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
 
@@ -47,6 +48,9 @@ const UpdateProfile = () => {
 
     return (
         <div className="hero min-h-screen">
+            <Helmet>
+                <title>Update Profile | Khan Real Estate</title>
+            </Helmet>
             <div className="hero-content w-full md:w-2/3 lg:w-1/2 flex-col">
                 <h1 className="text-2xl font-bold mb-6 underline">Update Your Profile</h1>
                 <div className="card shrink-0 rounded-none w-full bg-gray-500/25">

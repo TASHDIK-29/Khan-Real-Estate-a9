@@ -7,6 +7,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import { updateProfile } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -76,6 +77,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Register | Khan Real Estate</title>
+            </Helmet>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col w-full md:w-4/5 lg:w-2/5">
                     <div className="card shrink-0 w-full  bg-base-100 border border-purple-400">

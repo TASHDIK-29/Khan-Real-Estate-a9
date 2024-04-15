@@ -45,7 +45,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/bookmark',
-        element: <PrivateRoute><Bookmark></Bookmark></PrivateRoute>
+        element: <PrivateRoute><Bookmark></Bookmark></PrivateRoute>,
+        loader: () => fetch('/data.json')
       },
       {
         path: '/update',
@@ -62,7 +63,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
       <AuthProvider>
-        <RouterProvider router={router} />
+        {/* <HelmetProvider> */}
+          <RouterProvider router={router} />
+        {/* </HelmetProvider> */}
       </AuthProvider>
     </HelmetProvider>
 

@@ -14,6 +14,7 @@ const Nav = () => {
         <li><NavLink className={({ isActive }) => isActive ? 'border bg-slate-50 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/bookmark'>Bookmarks</NavLink></li>
         <li><NavLink className={({ isActive }) => isActive ? 'border bg-slate-50 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/update'>Update Profile</NavLink></li>
 
+
     </>
 
 
@@ -31,6 +32,7 @@ const Nav = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52">
                         {navLinks}
+
                     </ul>
                 </div>
                 <Link to='/' className="text-xl md:text-3xl font-semibold"><span className="text-green-700 font-bold text-3xl md:text-4xl underline">KHAN</span> Real Estate</Link>
@@ -38,6 +40,7 @@ const Nav = () => {
             <div className=" navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {navLinks}
+
                 </ul>
             </div>
             <div className=" navbar-end w-full md:w-2/3 flex justify-center md:justify-end space-y-2">
