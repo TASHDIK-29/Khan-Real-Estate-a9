@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
 
-    const { user } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
 
 
     const [name, setName] = useState(user.displayName);
@@ -33,8 +33,8 @@ const UpdateProfile = () => {
             photoURL: photo
         })
             .then(() => {
-
-                location.reload();
+                logOut();
+                // location.reload();
                 
             })
             .catch((error) => {

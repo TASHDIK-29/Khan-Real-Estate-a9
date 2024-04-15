@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "https://example.com/house1.jpg",
+      "image": "https://i.ibb.co/gFKynN3/single-family.jpg",
       "estate_title": "Cozy Family Home",
       "segment_name": "Single-family homes",
       "description": "This charming single-family home is perfect for a growing family. With spacious rooms, modern amenities, and a lovely backyard garden, it offers a comfortable and welcoming atmosphere. Located in a quiet neighborhood, it provides a peaceful retreat from city life.",
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "image": "https://example.com/townhouse1.jpg",
+      "image": "https://i.ibb.co/N7RnMTq/slider1.jpg",
       "estate_title": "Modern Townhouse",
       "segment_name": "Townhouses",
       "description": "Experience contemporary urban living in this modern townhouse. Featuring sleek design, an open floor plan, and a rooftop terrace perfect for entertaining, it offers a stylish and comfortable lifestyle. Located in a vibrant neighborhood, it's close to shops, restaurants, and entertainment.",
@@ -39,7 +39,7 @@
     },
     {
       "id": 3,
-      "image": "https://example.com/apartment1.jpg",
+      "image": "https://i.ibb.co/RS7XfFn/apartments2.jpg",
       "estate_title": "Luxury Apartment",
       "segment_name": "Apartments",
       "description": "Indulge in luxurious city living in this high-rise apartment. With stunning city views, resort-style amenities, and concierge services, it offers the ultimate urban lifestyle. Located in the heart of downtown, it's close to shopping, dining, and entertainment.",
@@ -58,7 +58,7 @@
     },
     {
       "id": 4,
-      "image": "https://example.com/student_housing1.jpg",
+      "image": "https://i.ibb.co/NrR229Y/student.jpg",
       "estate_title": "Student Housing ",
       "segment_name": "Student housing",
       "description": "Experience convenient student living in this modern apartment complex. With furnished apartments, study lounges, and recreational facilities, it offers a comfortable and supportive environment for academic success. Located near campus, it provides easy access to classes and campus amenities.",
@@ -77,7 +77,7 @@
     },
     {
       "id": 5,
-      "image": "https://example.com/senior_living1.jpg",
+      "image": "https://i.ibb.co/9nJm7Tk/senior.jpg",
       "estate_title": "Senior Living Community ",
       "segment_name": "Senior living communities",
       "description": "Discover a vibrant senior living community offering independent living, assisted living, and memory care services. Set in a tranquil environment with lush greenery and walking paths, it promotes an active and fulfilling lifestyle for seniors. Our dedicated staff provides personalized care and support, ensuring residents feel at home.",
@@ -96,7 +96,7 @@
     },
     {
       "id": 6,
-      "image": "https://example.com/vacation_rental1.jpg",
+      "image": "https://i.ibb.co/HDyWM2d/vacation.jpg",
       "estate_title": "Beachfront Vacation Rental",
       "segment_name": "Vacation rentals",
       "description": "Escape to paradise with this beachfront vacation rental. Enjoy panoramic ocean views, private beach access, and spacious outdoor living areas. Perfect for a family getaway or romantic retreat, it offers the ultimate beach experience.",
@@ -115,7 +115,7 @@
     },
     {
       "id": 7,
-      "image": "https://example.com/house2.jpg",
+      "image": "https://i.ibb.co/7KsXTds/retreate.jpg",
       "estate_title": "Family Retreat",
       "segment_name": "Single-family homes",
       "description": "Escape the hustle and bustle of city life with this inviting family retreat. Nestled in a quiet neighborhood, it offers a large backyard, perfect for outdoor gatherings. With spacious rooms and a deck for relaxing, it's the ideal place to call home.",
@@ -134,7 +134,7 @@
     },
     {
       "id": 8,
-      "image": "https://example.com/townhouse2.jpg",
+      "image": "https://i.ibb.co/yFC929N/historic.jpg",
       "estate_title": "Historic Townhouse",
       "segment_name": "Townhouses",
       "description": "Step back in time with this historic townhouse. Featuring original architectural features, elegant interiors, and a charming courtyard, it exudes classic charm and sophistication. Located in a prestigious neighborhood, it offers a timeless elegance.",
@@ -153,7 +153,7 @@
     },
     {
       "id": 9,
-      "image": "https://example.com/apartment2.jpg",
+      "image": "https://i.ibb.co/M2b969h/apartments.jpg",
       "estate_title": "Downtown Loft ",
       "segment_name": "Apartments",
       "description": "Experience urban living at its finest in this spacious downtown loft. With industrial-chic design, exposed brick walls, and skyline views, it offers a trendy and stylish lifestyle. Located in the heart of the city, it's surrounded by dining, shopping, and entertainment options.",

@@ -11,7 +11,7 @@ const Card = ({ item }) => {
     return (
         <div className="rounded-md shadow-md flex flex-col">
             <div className='relative'>
-                <img src={img} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+                <img src={image} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
                 <h1 className='text-white font-bold absolute top-0 right-0 bg-green-500 p-2 opacity-80 rounded-bl-xl'>{status}</h1>
                 <h1 className='text-white font-bold absolute top-0 left-0 bg-green-500 p-2 opacity-80 rounded-br-xl'>Hot Offer</h1>
             </div>

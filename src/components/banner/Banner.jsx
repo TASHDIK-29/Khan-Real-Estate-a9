@@ -17,6 +17,7 @@ const Banner = () => {
         <div className='z-0'>
 
             <Swiper
+            className='h-[100vh]'
                 navigation={true}
                 pagination={{
                     clickable: true
@@ -28,8 +29,8 @@ const Banner = () => {
                 }}
             >
                 <SwiperSlide>
-                    <div className='flex flex-col px-10 py-10 justify-center items-center banner-container '>
-                        <div className=' space-y-3 md:w-1/2 animate__animated animate__fadeInLeft'>
+                    <div className='flex flex-col px-10 py-10 justify-center items-center banner-container2'>
+                        <div className=' space-y-4 md:w-1/2 animate__animated animate__fadeInLeft'>
                             <h1 className='text-white font-bold text-xl'>Luxury House</h1>
                             <h1 className='text-white font-bold text-4xl border-l-4 border-green-700 pl-2 animate__animated animate__fadeInLeft'>Luxury Residence Here</h1>
                             <p className='text-white font-semibold animate__animated animate__fadeInLeft'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim tempora quia ipsa repellendus, voluptates harum reprehenderit fugiat cupiditate quam id cumque at cum voluptatem!</p>
@@ -38,8 +39,8 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='flex flex-col px-10 py-10 justify-center items-center banner-container' >
-                        <div className='space-y-3 md:w-1/2 animate__animated animate__fadeInLeft'>
+                    <div className='flex flex-col px-10 py-10 justify-center items-center banner-container3' >
+                        <div className='space-y-4 md:w-1/2 animate__animated animate__fadeInLeft'>
                             <h1 className='text-white font-bold text-xl'>Luxury House</h1>
                             <h1 className='text-white font-bold text-4xl border-l-4 pl-2 border-green-700 animate__animated animate__fadeInLeft'>Luxury Residence Here</h1>
                             <p className='text-white font-semibold animate__animated animate__fadeInLeft'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim tempora quia ipsa repellendus, voluptates harum reprehenderit fugiat cupiditate quam id cumque at cum voluptatem!</p>
@@ -49,7 +50,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='flex flex-col px-10 py-10 justify-center items-center banner-container'>
-                        <div className='space-y-3 md:w-1/2 animate__animated animate__fadeInLeft'>
+                        <div className='space-y-4 md:w-1/2 animate__animated animate__fadeInLeft'>
                             <h1 className='text-white font-bold text-xl'>Luxury House</h1>
                             <h1 className='text-white font-bold text-4xl border-l-4 pl-2 border-green-700 animate__animated animate__fadeInLeft'>Luxury Residence Here</h1>
                             <p className='text-white font-semibold animate__animated animate__fadeInLeft'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim tempora quia ipsa repellendus, voluptates harum reprehenderit fugiat cupiditate quam id cumque at cum voluptatem!</p>

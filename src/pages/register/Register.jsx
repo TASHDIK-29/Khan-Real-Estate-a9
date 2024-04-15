@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, logOut } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const [err, setErr] = useState('');
@@ -56,7 +56,9 @@ const Register = () => {
                     photoURL: photo
                   })
 
-                  navigate('/');
+                //   navigate('/');
+                logOut();
+                navigate('/login');
             })
             .catch(error => {
                 console.log(error);
