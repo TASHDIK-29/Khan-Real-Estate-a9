@@ -1,5 +1,8 @@
 import { useState } from "react";
-import img2 from '../../assets/member2-1.jpg'
+import img3 from '../../assets/member3-1.jpg'
+import img4 from '../../assets/member1-1.jpg'
+import img5 from '../../assets/member5-1.jpg'
+import img7 from '../../assets/member7-1.jpg'
 import 'animate.css';
 
 
@@ -32,14 +35,14 @@ const TeamMember = () => {
                 <div className="relative rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
                     onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}
                 >
-                    <img src={img2} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+                    <img src={img5} alt="" className="object-cover object-center w-full rounded-t-md h-96 dark:bg-gray-500" />
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
                             <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
-                            <p className="text-green-700 font-bold">Buying Agent</p>
+                            <p className="text-green-700 font-bold">Team Leader</p>
                         </div>
                     </div>
-                    {sidebar && count === 1 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
+                    {sidebar && count === 1 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-0">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
@@ -52,14 +55,14 @@ const TeamMember = () => {
                 <div className="relative max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
                     onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}
                 >
-                    <img src={img2} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+                    <img src={img7} alt="" className="object-cover object-center w-full rounded-t-md h-96 dark:bg-gray-500" />
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
-                            <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
+                            <h2 className="text-2xl font-semibold tracking-wide">Cristina Json</h2>
                             <p className="text-green-700 font-bold">Buying Agent</p>
                         </div>
                     </div>
-                    {sidebar && count === 2 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
+                    {sidebar && count === 2 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-0">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
@@ -72,14 +75,14 @@ const TeamMember = () => {
                 <div className="relative max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
                     onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}
                 >
-                    <img src={img2} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+                    <img src={img3} alt="" className="object-cover object-center w-full rounded-t-md h-96 dark:bg-gray-500" />
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
-                            <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
-                            <p className="text-green-700 font-bold">Buying Agent</p>
+                            <h2 className="text-2xl font-semibold tracking-wide">Zorjina Zen</h2>
+                            <p className="text-green-700 font-bold">Real Estate Broker</p>
                         </div>
                     </div>
-                    {sidebar && count === 3 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50  animate__animated animate__fadeInLeft delay-300">
+                    {sidebar && count === 3 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50  animate__animated animate__fadeInLeft delay-0">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
@@ -92,14 +95,14 @@ const TeamMember = () => {
                 <div className="relative max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800"
                     onMouseEnter={() => handleMouseEnter(4)} onMouseLeave={handleMouseLeave}
                 >
-                    <img src={img2} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+                    <img src={img4} alt="" className="object-cover object-center w-full rounded-t-md h-96 dark:bg-gray-500" />
                     <div className="flex flex-col justify-between p-6 space-y-8">
                         <div className="space-y-2 text-center">
-                            <h2 className="text-2xl font-semibold tracking-wide">Donec lectus leo</h2>
+                            <h2 className="text-2xl font-semibold tracking-wide">Robert Flips</h2>
                             <p className="text-green-700 font-bold">Buying Agent</p>
                         </div>
                     </div>
-                    {sidebar && count === 4 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-300">
+                    {sidebar && count === 4 && <div className="absolute top-0 w-1/6 h-full flex flex-col items-center justify-around bg-gray-700/50 animate__animated animate__fadeInLeft delay-0">
                         <FaFacebookSquare className="text-2xl text-white cursor-pointer" />
                         <FaSquareInstagram className="text-2xl text-white cursor-pointer" />
                         <FaTwitter className="text-2xl text-white cursor-pointer" />
