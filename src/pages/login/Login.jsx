@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
@@ -12,6 +12,10 @@ import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     const location = useLocation();
     const navigate = useNavigate()

@@ -4,8 +4,13 @@ import { getStoredData } from "../../utils/storage";
 import Marquee from "react-fast-marquee";
 import { useLoaderData } from 'react-router-dom';
 import Recommended from "../../components/recommended/Recommended";
+import { useEffect } from "react";
 
 const Bookmark = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     const data = useLoaderData();
     console.log(data);

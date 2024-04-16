@@ -3,7 +3,15 @@ import { useLoaderData } from "react-router-dom";
 import Cards from "../../components/cards/Cards";
 import TeamMember from "../../components/team/TeamMember";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+
+
+
 const Home = () => {
+    
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     const data = useLoaderData();
     console.log(data);

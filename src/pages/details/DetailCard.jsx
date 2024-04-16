@@ -1,5 +1,4 @@
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
-import img from '../../assets/slider1.jpg'
 import { FaLocationDot } from "react-icons/fa6";
 import { FaTags } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
@@ -14,9 +13,14 @@ import { toast } from 'react-hot-toast';
 import 'animate.css';
 import { getStoredData, saveStoredData } from '../../utils/storage';
 import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 
 
 const DetailCard = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     const navigate = useNavigate();
 

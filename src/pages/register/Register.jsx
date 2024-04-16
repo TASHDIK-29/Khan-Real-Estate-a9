@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../auth/AuthProvider";
@@ -11,6 +11,10 @@ import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     const { createUser, logOut } = useContext(AuthContext);
     const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../auth/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
@@ -6,6 +6,10 @@ import toast from 'react-hot-toast';
 import { Helmet } from "react-helmet-async";
 
 const UpdateProfile = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
 
     const { user, logOut } = useContext(AuthContext);
 
