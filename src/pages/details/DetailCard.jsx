@@ -52,7 +52,7 @@ const DetailCard = () => {
             <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded ">
                 <img src={image} alt="" className="w-full h-60 sm:h-96 dark:bg-gray-500 animate__animated animate__zoomIn" />
                 <div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-2xl sm:px-10 sm:mx-12 lg:rounded-md dark:bg-gray-50 animate__animated animate__fadeInRight">
-                    <div className='flex justify-between p-2 bg-black text-white font-bold'>
+                    <div className='md:flex justify-between p-2 bg-black text-white font-bold'>
                         <h1 className='flex gap-2 items-center'><FaTags />{segment_name}</h1>
                         <h5 className='flex gap-2 items-center'><FaCalendarAlt />Build in {building_year}</h5>
                         <h3 className='text-orange-700'>{price}</h3>
