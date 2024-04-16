@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='lg:flex justify-between footer-container p-2'>
                 <div className='lg:w-1/2 pt-12 px-3 md:px-10'>
                     <h1 className='text-4xl font-bold text-white mb-16'><span className='underline text-green-600'>Khan</span> Real Estate</h1>
-                    <p className='text-lg font-semibold text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quod libero quo qui cumque dignissimos necessitatibus, itaque, saepe, sunt asperiores nisi tempore tempora porro accusantium exercitationem? Magnam, officia, nemo ad iste tenetur ab quo quod, quaerat sunt error esse assumenda.</p>
+                    <p className='text-lg font-semibold text-gray-300'>Unlocking doors to your dreams, our real estate company isn't just about properties; it's about possibilities. From cozy starter homes to luxurious estates, we curate spaces where every brick whispers 'welcome home.' Let's build your future, one address at a time.</p>
                     <div className='mt-16 px-8 space-y-2'>
                         <h3 className='text-lg font-bold text-gray-300 flex items-center gap-4'><FaPhone className='text-green-500' />Call us 1-800-555-1234</h3>
                         <h3 className='text-lg font-bold text-gray-300 flex items-center gap-4'><MdEmail className='text-green-500' />info@example.com</h3>
