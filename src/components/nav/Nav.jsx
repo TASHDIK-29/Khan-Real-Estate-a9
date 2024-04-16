@@ -10,9 +10,9 @@ const Nav = () => {
     const { user, logOut } = useContext(AuthContext);
 
     const navLinks = <>
-        <li><NavLink className={({ isActive }) => isActive ? 'border bg-slate-50 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/'>Home</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? 'border bg-slate-50 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/bookmark'>Bookmarks</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? 'border bg-slate-50 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/update'>Update Profile</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? 'border-b-4 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/'>Home</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? 'border-b-4 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/bookmark'>Bookmarks</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? 'border-b-4 py-2 px-3 border-green-600 rounded-lg text-lg text-[#23BE0A] font-bold my-3' : 'text-lg py-2 px-3 text-black font-bold my-3'} to='/update'>Update Profile</NavLink></li>
 
 
     </>

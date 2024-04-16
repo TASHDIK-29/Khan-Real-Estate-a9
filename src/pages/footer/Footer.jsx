@@ -1,4 +1,3 @@
-import footerBg from '../../assets/footer.jpg'
 import map from '../../assets/map.png'
 import { FaPhone, FaClock, FaPenToSquare, FaSquareInstagram, FaSquareXTwitter, FaFacebook } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
